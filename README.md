@@ -5,7 +5,7 @@
 </br>
 </br>
 <kbd>
-<img src="https://github.com/dimastatz/metavox/blob/main/metavox.png?raw=true" width="256px"> 
+<img src="https://github.com/dimastatz/metavox/blob/main/metavox-2.png?raw=true" width="256px"> 
 </kbd>
 </div>
 
