@@ -1,5 +1,5 @@
 <div align="center">
-<h1 align="center"> Whisper Flow </h1> 
+<h1 align="center"> MetaVox </h1> 
 <h3>AI dubbing in multiple languages</br></h3>
 <img src="https://img.shields.io/badge/Progress-0%25-red"> <img src="https://img.shields.io/badge/Feedback-Welcome-green">
 </br>
