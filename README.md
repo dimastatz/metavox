@@ -1,6 +1,6 @@
 <div align="center">
 <h1 align="center"> MetaVox </h1> 
-<h3>AI dubbing in multiple languages</br></h3>
+<h3>AI Dubbing Python Library for Multi-Language Support</br></h3>
 <img src="https://img.shields.io/badge/Progress-0%25-red"> <img src="https://img.shields.io/badge/Feedback-Welcome-green">
 </br>
 </br>
@@ -10,5 +10,5 @@
 </div>
 
 
-# metavox
-Metavox enables creators to reach global audiences by adding natural, high-quality audio tracks in multiple languages.
+# MetaVox
+MetaVox is an open-source Python library designed for video dubbing, leveraging neural networks and LLMs. It serves as a foundation for building applications and services tailored to video content creators, enabling them to reach a broader audience by seamlessly generating content in multiple languages.
