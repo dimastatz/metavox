@@ -1,11 +1,11 @@
 # MetaVox 
 
 ## Goals
-- Architect and develop an open-source library that delivers advanced speech capabilities tailored for application developers with limited AI expertise. The library will streamline AI application development by offering core functionalities such as speech-to-text, text-to-speech, and translation services.
-- Achieve a minimum of 100 stars on GitHub and establish MetaVox as a widely adopted Python library in the speech processing domain through targeted marketing strategies.
-    - Seamlessly integrate MetaVox as a plugin with leading AI frameworks such as LangChain, Semantic Kernel, and others to enhance usability and drive adoption.
-- Leverage MetaVox to promote myself professionally as an author of a widely used library.
-- Utilize MetaVox to create an AI Agent that performs auto-translation and narration of video clips for bloggers to reach a multilingual community.
+- Develop an open-source library with advanced speech capabilities for developers with limited AI expertise, offering speech-to-text, text-to-speech, and translation services.
+- Achieve 100+ GitHub stars and establish MetaVox as a widely adopted Python library in speech processing through targeted marketing.
+- Integrate MetaVox with AI frameworks like LangChain and Semantic Kernel to enhance usability and adoption.
+- Promote myself professionally as the author of MetaVox.
+- Create an AI Agent using MetaVox for auto-translation and narration of video clips for bloggers to reach a multilingual audience.
 
 ## Strategy
 
