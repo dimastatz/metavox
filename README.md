@@ -10,7 +10,7 @@
 </div>
 
 
-# MetaVox Transforms Presentation Creation with AI-Generated Slides and Live Voice Narration
+# MetaVox Transforms Presentation Creation
 
 **Tel Aviv, Israel – March 10, 2025** – MetaVox introduces a groundbreaking solution that revolutionizes how professionals and educators develop and deliver presentations. MetaVox harnesses advanced AI technology to generate slide presentations from simple prompts and enhances them with synchronized live voice narration, offering a dynamic and engaging experience for audiences worldwide.
 
