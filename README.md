@@ -32,16 +32,6 @@ MetaVox simplifies the presentation process by allowing users to input a brief p
 
 - **Customizable Templates:** Access a variety of professionally designed templates to enhance the visual appeal of your presentations.
 
-## Customer Testimonials
-
-> "MetaVox has transformed the way I prepare for lectures. The AI-generated slides are spot-on, and the live narration feature adds a professional touch that keeps my students engaged."
-
-> – *Dr. Sarah Cohen, University Lecturer*
-
-> "As a marketing consultant, MetaVox has saved me countless hours. I can now create tailored presentations for clients in minutes, complete with high-quality narration."
-
-> – *David Levi, Marketing Consultant*
-
 ## About MetaVox
 
 MetaVox is committed to enhancing communication through innovative presentation solutions. By leveraging cutting-edge AI technology, MetaVox empowers users to create engaging and informative video presentations with ease.
