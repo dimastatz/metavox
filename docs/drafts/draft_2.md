@@ -15,6 +15,47 @@ MetaVox simplifies the process of turning static presentations into engaging vid
 
 MetaVox is designed for developers and organizations seeking to integrate video creation into their existing Python-based pipelines. From single-slide projects to batch processing hundreds of presentations, MetaVox scales to meet diverse needs—all while remaining free and fully extensible.
 
+## **Free Features (Open Source)**
+These core features provide essential functionality to users without any cost.  
+
+### **Input & Processing**  
+✅ Upload slides in common formats: **PowerPoint (PPTX), PDF, Images (PNG, JPG)**  
+✅ Extract text from slides & speaker notes automatically  
+✅ Basic text-to-speech (TTS) with open-source voices (e.g., Coqui, Festival, espeak)  
+✅ Generate MP4 videos with synchronized slides and narration  
+✅ Basic slide transition effects (e.g., fade, cut, simple zoom)  
+✅ Control narration speed and pitch  
+✅ Export subtitles (SRT format)  
+✅ Command-line and Python API support  
+
+### **Customization & Automation**  
+✅ Specify voice gender and tone from available free models  
+✅ Basic background music support (royalty-free options)  
+✅ Generate videos at **720p resolution**  
+✅ Automatic slide timing based on narration length  
+✅ Save and load project configurations for repeatable automation  
+
+---
+
+## **Premium Features (Subscription or Pro License)**  
+These advanced features cater to professional users looking for high-quality, scalable, and enhanced automation capabilities.  
+
+### **Enhanced Audio & Video Generation**  
+🚀 Access to high-quality TTS voices (Google WaveNet, Amazon Polly, ElevenLabs, OpenAI)  
+🚀 Support for multiple languages and accents  
+🚀 AI-powered voice cloning for custom narration  
+🚀 Generate videos in **Full HD (1080p) and 4K**  
+🚀 Advanced slide transitions and animations (e.g., pan, 3D effects)  
+🚀 Ability to fine-tune narration pauses and emphasis  
+🚀 Option to add background music from licensed libraries  
+
+### **AI-Powered & Enterprise Features**  
+🚀 AI-assisted text summarization and slide simplification  
+🚀 Automatic lip-syncing for avatar-based video narration  
+🚀 Integration with **YouTube, Vimeo, and social media platforms** for direct uploads  
+🚀 Batch processing for large-scale video generation  
+🚀 Team collaboration and cloud-based storage options  
+
 ## Availability and Getting Started
 
 MetaVox is available now on PyPI (`pip install metavox`) and GitHub. Developers can dive into the documentation and sample scripts to start creating narrated videos today. Future enhancements will include advanced AI voice features and real-time preview functionality.
