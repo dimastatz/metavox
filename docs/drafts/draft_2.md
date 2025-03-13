@@ -25,19 +25,19 @@ These core features provide essential functionality to users without any cost.
 ---
 
 ## Premium Features (Subscription or Pro License)**  
-These advanced features cater to professional users looking for high-quality, scalable, and enhanced automation capabilities.  
-🚀 Support other known slides formats, like pdf, images, etc
-🚀 Access to high-quality TTS voices  
-🚀 Support for multiple languages and accents  
-🚀 AI-powered voice cloning for custom narration
+These advanced features cater to professional users looking for high-quality, scalable, and enhanced automation capabilities.    
+🚀 Support other known slides formats, like pdf, images, etc  
+🚀 Access to high-quality TTS voices    
+🚀 Support for multiple languages and accents     
+🚀 AI-powered voice cloning for custom narration  
 🚀 Control narration speed and pitch  
 🚀 Generate videos in **Full HD (1080p) and 4K**  
-🚀 Advanced slide transitions and animations (e.g., pan, 3D effects)  
+🚀 Advanced slide transitions and animations (e.g., pan, 3D effects)    
 🚀 Ability to fine-tune narration pauses and emphasis  
 🚀 Option to add background music from free licensed libraries  
 🚀 AI-assisted text summarization and slide simplification  
 🚀 Automatic lip-syncing for avatar-based video narration  
-🚀 Integration with **YouTube, Vimeo, and social media platforms** for direct uploads  
+🚀 Integration with **YouTube, Vimeo, and social media platforms** for direct uploads    
 🚀 Batch processing for large-scale video generation  
 🚀 Team collaboration and cloud-based storage options  
 
