@@ -19,7 +19,6 @@ These core features provide essential functionality to users without any cost.
 ✅ Basic text-to-speech (TTS) for speaker notes   
 ✅ Generate MP4 videos with synchronized slides and narration at **720p resolution**   
 ✅ Basic slide transition effects (e.g., fade, cut, simple zoom)    
-✅ Export subtitles (SRT format)  
 ✅ Specify voice gender and tone from available free models  
 ✅ Automatic slide timing based on narration length  
 ---
@@ -40,6 +39,7 @@ These advanced features cater to professional users looking for high-quality, sc
 🚀 Integration with **YouTube, Vimeo, and social media platforms** for direct uploads    
 🚀 Batch processing for large-scale video generation  
 🚀 Team collaboration and cloud-based storage options  
+🚀 Export subtitles (SRT format)  
 
 ## Availability and Getting Started
 
