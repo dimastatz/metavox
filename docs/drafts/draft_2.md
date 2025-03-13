@@ -27,7 +27,7 @@ These core features provide essential functionality to users without any cost.
 ## Premium Features (Subscription or Pro License)**  
 These advanced features cater to professional users looking for high-quality, scalable, and enhanced automation capabilities.  
 🚀 Support other known slides formats, like pdf, images, etc
-🚀 Access to high-quality TTS voices (Google WaveNet, Amazon Polly, ElevenLabs, OpenAI)  
+🚀 Access to high-quality TTS voices  
 🚀 Support for multiple languages and accents  
 🚀 AI-powered voice cloning for custom narration
 🚀 Control narration speed and pitch  
