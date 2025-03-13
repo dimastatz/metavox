@@ -3,17 +3,9 @@ Today, we are excited to announce the immediate availability of **MetaVox**, a n
 
 MetaVox simplifies the process of turning static presentations into engaging videos. Customers can upload slides in common formats (such as PowerPoint, PDF, or images), pair them with text like speaker notes, and generate high-quality MP4 videos with natural-sounding narration—all with just a few lines of Python code. Whether building e-learning courses, automating business presentations, or producing tutorials, MetaVox offers a flexible, code-driven approach to video creation.
 
-## Key Capabilities
-
-- **Text-to-Speech Narration**: Transform speaker notes into professional voiceovers with over 500 voice options across 80+ languages.
-- **Slide Integration**: Seamlessly import slides from PPTX, PDF, or image files and sync them with narration timing.
-- **Programmatic Control**: Customize slide durations, voice settings, and audio overlays using Python scripts.
-- **Local Processing**: Run MetaVox on Windows, macOS, or Linux with no reliance on external services.
-- **Open-Source**: Available at no cost, with source code on GitHub for community contributions.
-
 MetaVox is designed for developers and organizations seeking to integrate video creation into their existing Python-based pipelines. From single-slide projects to batch processing hundreds of presentations, MetaVox scales to meet diverse needs—all while remaining free and fully extensible.
 
-## Free Features(Open Source)**
+## Free Features(Open Source, available at no cost)**
 These core features provide essential functionality to users without any cost.  
 ✅ Upload slides in PPTX format  
 ✅ Basic text-to-speech (TTS) for speaker notes   
@@ -23,7 +15,7 @@ These core features provide essential functionality to users without any cost.
 ✅ Automatic slide timing based on narration length  
 ---
 
-## Premium Features (Subscription or Pro License)**  
+**## Premium Features (Subscription or Pro License)**  
 These advanced features cater to professional users looking for high-quality, scalable, and enhanced automation capabilities.    
 🚀 Support other known slides formats, like pdf, images, etc  
 🚀 Access to high-quality TTS voices    
