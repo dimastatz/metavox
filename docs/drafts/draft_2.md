@@ -17,10 +17,10 @@ MetaVox is designed for developers and organizations seeking to integrate video 
 
 ## Free Features(Open Source)**
 These core features provide essential functionality to users without any cost.  
-✅ Upload slides in PPTX format
-✅ Basic text-to-speech (TTS) for speaker notes 
-✅ Generate MP4 videos with synchronized slides and narration at **720p resolution** 
-✅ Basic slide transition effects (e.g., fade, cut, simple zoom)  
+✅ Upload slides in PPTX format  
+✅ Basic text-to-speech (TTS) for speaker notes   
+✅ Generate MP4 videos with synchronized slides and narration at **720p resolution**   
+✅ Basic slide transition effects (e.g., fade, cut, simple zoom)    
 ✅ Export subtitles (SRT format)  
 ✅ Specify voice gender and tone from available free models  
 ✅ Automatic slide timing based on narration length  
