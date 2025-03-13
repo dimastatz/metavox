@@ -5,7 +5,7 @@ MetaVox simplifies the process of turning static presentations into engaging vid
 
 MetaVox is designed for developers and organizations seeking to integrate video creation into their existing Python-based pipelines. From single-slide projects to batch processing hundreds of presentations, MetaVox scales to meet diverse needs—all while remaining free and fully extensible.
 
-## Free Features(Open Source, available at no cost)**
+## Free Features(Open Source, available at no cost)
 These core features provide essential functionality to users without any cost.  
 ✅ Upload slides in PPTX format  
 ✅ Basic text-to-speech (TTS) for speaker notes   
@@ -13,9 +13,8 @@ These core features provide essential functionality to users without any cost.
 ✅ Basic slide transition effects (e.g., fade, cut, simple zoom)    
 ✅ Specify voice gender and tone from available free models  
 ✅ Automatic slide timing based on narration length  
----
 
-**## Premium Features (Subscription or Pro License)**  
+## Premium Features (Subscription or Pro License)
 These advanced features cater to professional users looking for high-quality, scalable, and enhanced automation capabilities.    
 🚀 Support other known slides formats, like pdf, images, etc  
 🚀 Access to high-quality TTS voices    
