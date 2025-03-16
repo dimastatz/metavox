@@ -14,9 +14,9 @@
 
  MetaVox introduces a groundbreaking solution that revolutionizes how professionals and educators develop and deliver presentations. MetaVox harnesses advanced AI technology to generate slide presentations from simple prompts and enhances them with synchronized live voice narration, offering a dynamic and engaging experience for audiences worldwide.
 
-| ![Video Streaming Analytics](https://github.com/dimastatz/video-streaming-analytics/blob/main/docs/chart-video-streaming.png) |
+| ![ Metavox Data Flow](https://github.com/dimastatz/metavox/blob/main/docs/images/metavox_dataflow.png) |
 |:--:| 
-| *Diagram1: Video Streaming Flow* |
+| *Diagram1: Metavox Data Flow* |
 
 
 ## Addressing Presentation Challenges
