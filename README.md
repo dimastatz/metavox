@@ -19,24 +19,32 @@
 | *Diagram1: Metavox Data Flow* |
 
 
-## Addressing Presentation Challenges
+## Free Features(Open Source, available at no cost)
+These core features provide essential functionality to users without any cost.  
+✅ Upload slides in PPTX format  
+✅ Basic text-to-speech (TTS) for speaker notes   
+✅ Generate MP4 videos with synchronized slides and narration at **720p resolution**   
+✅ Basic slide transition effects (e.g., fade, cut, simple zoom)    
+✅ Specify voice gender and tone from available free models  
+✅ Automatic slide timing based on narration length  
 
-Creating compelling presentations can be time-consuming and often requires a blend of design and storytelling skills. Many professionals struggle to convey their messages effectively, leading to disengaged audiences and missed opportunities for impact.
+## Premium Features (Subscription or Pro License)
+These advanced features cater to professional users looking for high-quality, scalable, and enhanced automation capabilities.    
+🚀 Support other known slides formats, like pdf, images, etc  
+🚀 Access to high-quality TTS voices    
+🚀 Support for multiple languages and accents     
+🚀 AI-powered voice cloning for custom narration  
+🚀 Control narration speed and pitch  
+🚀 Generate videos in **Full HD (1080p) and 4K**  
+🚀 Advanced slide transitions and animations (e.g., pan, 3D effects)    
+🚀 Ability to fine-tune narration pauses and emphasis  
+🚀 Option to add background music from free licensed libraries  
+🚀 AI-assisted text summarization and slide simplification  
+🚀 Automatic lip-syncing for avatar-based video narration  
+🚀 Integration with **YouTube, Vimeo, and social media platforms** for direct uploads    
+🚀 Batch processing for large-scale video generation  
+🚀 Team collaboration and cloud-based storage options  
+🚀 Export subtitles (SRT format)  
 
-## MetaVox: The Innovative Solution
-
-MetaVox simplifies the presentation process by allowing users to input a brief prompt, from which it intelligently crafts a comprehensive slide deck. It then produces video presentations that automatically progress through the slides, accompanied by synchronized live voice narration. This seamless integration ensures a professional and polished delivery, enabling users to focus on their core message without the hassle of manual slide creation and narration.
-
-## Key Features
-
-- **AI-Generated Slides:** Transform simple prompts into detailed, visually appealing slide presentations effortlessly.
-
-- **Automated Video Narration:** Create video presentations with synchronized live voiceovers that guide viewers through the content seamlessly.
-
-- **User-Friendly Interface:** Designed for simplicity, MetaVox enables users to produce professional presentations without advanced technical skills.
-
-- **Customizable Templates:** Access a variety of professionally designed templates to enhance the visual appeal of your presentations.
-
-## About MetaVox
-
-MetaVox is committed to enhancing communication through innovative presentation solutions. By leveraging cutting-edge AI technology, MetaVox empowers users to create engaging and informative video presentations with ease.
+## How To:
+[TBD]()
