@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="I87e9ysphhptvvuEUAK5" name="slides-to-video">
-        <mxGraphModel dx="1300" dy="846" grid="1" gridSize="4" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+        <mxGraphModel dx="1300" dy="801" grid="1" gridSize="4" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -57,6 +57,29 @@
                 </mxCell>
                 <mxCell id="20" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://png.pngtree.com/png-vector/20221016/ourmid/pngtree-electronic-upload-file-icon-clipart-hd-png-image_6318312.png;" vertex="1" parent="1">
                     <mxGeometry x="689" y="122" width="30" height="30" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+    <diagram id="EcE08DdQRcO3Xfa7C7yU" name="Page-2">
+        <mxGraphModel dx="1300" dy="801" grid="1" gridSize="4" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="fhBHBrMG5NkawLO5S3xv-1" value="Customer&lt;div&gt;App&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#999999;" vertex="1" parent="1">
+                    <mxGeometry x="96" y="176" width="96" height="96" as="geometry"/>
+                </mxCell>
+                <mxCell id="fhBHBrMG5NkawLO5S3xv-3" value="SlideCast&lt;div&gt;Lib&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#999999;" vertex="1" parent="1">
+                    <mxGeometry x="256" y="176" width="96" height="96" as="geometry"/>
+                </mxCell>
+                <mxCell id="fhBHBrMG5NkawLO5S3xv-4" value="" style="endArrow=classic;html=1;exitX=1.002;exitY=0.328;exitDx=0;exitDy=0;entryX=0.002;entryY=0.339;entryDx=0;entryDy=0;exitPerimeter=0;entryPerimeter=0;" edge="1" parent="1" source="fhBHBrMG5NkawLO5S3xv-1" target="fhBHBrMG5NkawLO5S3xv-3">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="192" y="230" as="sourcePoint"/>
+                        <mxPoint x="242" y="180" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="fhBHBrMG5NkawLO5S3xv-5" value="SlideCast&lt;div&gt;Service&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#999999;" vertex="1" parent="1">
+                    <mxGeometry x="416" y="176" width="96" height="96" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>
