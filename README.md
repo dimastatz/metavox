@@ -12,7 +12,7 @@
 
 # MetaVox Transforms Presentation Creation
 
- MetaVox introduces a groundbreaking solution that revolutionizes how professionals and educators develop and deliver presentations. MetaVox harnesses advanced AI technology to generate slide presentations from simple prompts and enhances them with synchronized live voice narration, offering a dynamic and engaging experience for audiences worldwide.
+MetaVox introduces a groundbreaking solution that revolutionizes how professionals and educators develop and deliver presentations. MetaVox harnesses advanced AI technology to generate slide presentations from simple prompts and enhances them with synchronized live voice narration, offering a dynamic and engaging experience for audiences worldwide.
 
 | ![ Metavox Data Flow](https://github.com/dimastatz/metavox/blob/main/docs/images/metavox_dataflow.png) |
 |:--:| 
