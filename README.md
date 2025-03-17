@@ -24,8 +24,6 @@ These core features provide essential functionality to users without any cost.
 ✅ Upload slides in PPTX format  
 ✅ Basic text-to-speech (TTS) for speaker notes in English  
 ✅ Generate MP4 videos with synchronized slides and narration at **720p resolution**   
-✅ Basic slide transition effects (e.g., fade, cut, simple zoom)    
-✅ Specify voice gender and tone from available free models  
 ✅ Automatic slide timing based on narration length  
 
 ## Premium Features (Subscription or Pro License)
@@ -45,6 +43,8 @@ These advanced features cater to professional users looking for high-quality, sc
 🚀 Batch processing for large-scale video generation  
 🚀 Team collaboration and cloud-based storage options  
 🚀 Export subtitles (SRT format)  
+🚀 Basic slide transition effects (e.g., fade, cut, simple zoom)    
+🚀 Specify voice gender and tone from available free models  
 
 ## How To:
 [TBD]()
