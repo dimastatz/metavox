@@ -27,7 +27,7 @@ These core features provide essential functionality to users without any cost.
 ✅ Automatic slide timing based on narration length  
 
 
-| ![ Metavox Data Flow](https://github.com/dimastatz/metavox/blob/main/docs/images/metavox_dataflow.png) |
+| ![ Metavox Data Flow](https://github.com/dimastatz/metavox/blob/main/docs/images/premium_flow.png) |
 |:--:| 
 | *Diagram1: Metavox Premium vs Free * |
 
