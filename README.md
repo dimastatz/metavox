@@ -26,6 +26,11 @@ These core features provide essential functionality to users without any cost.
 ✅ Generate MP4 videos with synchronized slides and narration at **720p resolution**   
 ✅ Automatic slide timing based on narration length  
 
+
+| ![ Metavox Data Flow](https://github.com/dimastatz/metavox/blob/main/docs/images/metavox_dataflow.png) |
+|:--:| 
+| *Diagram1: Metavox Premium vs Free * |
+
 ## Premium Features (Subscription or Pro License)
 These advanced features cater to professional users looking for high-quality, scalable, and enhanced automation capabilities.    
 🚀 Support other known slides formats, like pdf, images, etc  
