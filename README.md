@@ -22,7 +22,7 @@ MetaVox introduces a groundbreaking solution that revolutionizes how professiona
 ## Free Features(Open Source, available at no cost)
 These core features provide essential functionality to users without any cost.  
 ✅ Upload slides in PPTX format  
-✅ Basic text-to-speech (TTS) for speaker notes   
+✅ Basic text-to-speech (TTS) for speaker notes in English  
 ✅ Generate MP4 videos with synchronized slides and narration at **720p resolution**   
 ✅ Basic slide transition effects (e.g., fade, cut, simple zoom)    
 ✅ Specify voice gender and tone from available free models  
@@ -31,7 +31,7 @@ These core features provide essential functionality to users without any cost.
 ## Premium Features (Subscription or Pro License)
 These advanced features cater to professional users looking for high-quality, scalable, and enhanced automation capabilities.    
 🚀 Support other known slides formats, like pdf, images, etc  
-🚀 Access to high-quality TTS voices    
+🚀 Access to high-quality TTS voices in multiple Lamguages   
 🚀 Support for multiple languages and accents     
 🚀 AI-powered voice cloning for custom narration  
 🚀 Control narration speed and pitch  
