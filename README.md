@@ -29,7 +29,7 @@ These core features provide essential functionality to users without any cost.
 
 | ![ Metavox Data Flow](https://github.com/dimastatz/metavox/blob/main/docs/images/premium_flow.png) |
 |:--:| 
-| *Diagram1: Metavox Premium vs Free * |
+| Diagram2: Metavox Premium vs Free |
 
 ## Premium Features (Subscription or Pro License)
 These advanced features cater to professional users looking for high-quality, scalable, and enhanced automation capabilities.    
