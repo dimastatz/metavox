@@ -7,8 +7,8 @@ setup(
     install_requires=[
         # List your dependencies here
     ],
-    author='Your Name',
-    author_email='your.email@example.com',
+    author='Dima Statz',
+    author_email='dima.statz@gmail.com.com',
     description='An open-source library with advanced speech capabilities.',
     long_description=open('README.md').read(),
     long_description_content_type='text/markdown',
