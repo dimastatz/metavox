@@ -22,35 +22,35 @@ elif [ $1 = "-local" ]; then
     pip install --upgrade pip
     pip install -r ./requirements.txt
 
-    black whisperflow tests
-    pylint --fail-under=9.9 whisperflow tests
-    pytest --ignore=tests/benchmark --cov-fail-under=95 --cov whisperflow -v tests
+    black metavox tests
+    pylint --fail-under=9.9 metavox tests
+    pytest --ignore=tests/benchmark --cov-fail-under=95 --cov metavox -v tests
 elif [ $1 = "-test" ]; then
     trap 'abort' 0
     set -e
     echo "Running format, linter and tests"
     source .venv/bin/activate
-    black whisperflow tests
-    pylint --fail-under=9.9 whisperflow tests
-    pytest --ignore=tests/benchmark --cov-fail-under=95 --cov --log-cli-level=INFO whisperflow -v tests
+    black metavox tests
+    pylint --fail-under=9.9 metavox tests
+    pytest --ignore=tests/benchmark --cov-fail-under=95 --cov --log-cli-level=INFO metavox -v tests
 elif [ $1 = "-docker" ]; then
     echo "Building and running docker image"
-    docker stop whisperflow-container
-    docker rm whisperflow-container
-    docker rmi whisperflow-image
+    docker stop metavox-container
+    docker rm metavox-container
+    docker rmi metavox-image
     # build docker and run
-    docker build --tag whisperflow-image --build-arg CACHEBUST=$(date +%s) . --file Dockerfile.test
-    docker run --name whisperflow-container -p 8888:8888 -d whisperflow-image
+    docker build --tag metavox-image --build-arg CACHEBUST=$(date +%s) . --file Dockerfile.test
+    docker run --name metavox-container -p 8888:8888 -d metavox-image
 elif [ $1 = "-test-package" ]; then
-    echo "Running WhisperFlow package setup"
+    echo "Running metavox package setup"
     # pip install twine
     # pip install wheel
     python setup.py sdist bdist_wheel
     rm -rf .venv_test
     python3 -m venv .venv_test
     source .venv_test/bin/activate
-    pip install ./dist/whisperflow-0.1.0-py3-none-any.whl
-    pytest --ignore=tests/benchmark --cov-fail-under=95 --cov whisperflow -v tests
+    pip install ./dist/metavox-0.1.0-py3-none-any.whl
+    pytest --ignore=tests/benchmark --cov-fail-under=95 --cov metavox -v tests
     # twine upload ./dist/*
 else
   echo "Wrong argument is provided. Usage:
