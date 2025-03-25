@@ -19,7 +19,9 @@ def test_version():
 
 def test_read_presentation():
     """test presentation load"""
-    presentation = pt.read_presentation(get_resource_path("dummy_presentation", "pptx"))
+    file_path = get_resource_path("dummy_presentation", "pptx")
+    presentation = pt.read_presentation(file_path)
+
     assert presentation is not None
     assert len(presentation.slides) == 4
     assert not presentation.slides[0].notes_slide.notes_text_frame.text is None
