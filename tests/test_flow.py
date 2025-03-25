@@ -22,3 +22,4 @@ def test_read_presentation():
     presentation = pt.read_presentation(get_resource_path("dummy_presentation", "pptx"))
     assert presentation is not None
     assert len(presentation.slides) == 4
+    assert not presentation.slides[0].notes_slide.notes_text_frame.text is None
