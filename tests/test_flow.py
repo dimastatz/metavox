@@ -19,9 +19,10 @@ def test_version():
 
 def test_read_presentation():
     """test presentation load"""
+    slide_0_notes = "MetaVox is a groundbreaking AI-driven"
     file_path = get_resource_path("dummy_presentation", "pptx")
     presentation = pt.read_presentation(file_path)
 
     assert presentation is not None
     assert len(presentation.slides) == 4
-    assert not presentation.slides[0].notes_slide.notes_text_frame.text is None
+    assert slide_0_notes in pt.get_speaker_notes(presentation, 0)
