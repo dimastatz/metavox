@@ -1,6 +1,7 @@
 """ test main flows of metavox"""
 
 import os
+import tempfile
 import metavox
 import metavox.presentation as pt
 
@@ -26,3 +27,6 @@ def test_read_presentation():
     assert presentation is not None
     assert len(presentation.slides) == 4
     assert slide_0_notes in pt.get_speaker_notes(presentation, 0)
+
+    with tempfile.TemporaryDirectory() as temp_dir:
+        assert pt.slide_to_image(file_path, 0, temp_dir) is not None
