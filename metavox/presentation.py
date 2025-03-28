@@ -20,14 +20,3 @@ def get_speaker_notes(presentation: Presentation, slide_index: int) -> str:
     return notes_slide.notes_text_frame.text
 
 
-def slide_to_image(
-    file_name: str, slide_index: int, target_folder: str, scale=1
-) -> BytesIO:
-    """Convert the slide to an image"""
-    with slides.Presentation(file_name) as presentation:
-        slide = presentation.slides[slide_index]
-        with slide.get_image(scale, scale) as thumbnail:
-            _, file = os.path.split(file_name)
-            file = file.split(".")[0] + f"_slide_{slide_index}.jpg"
-            thumbnail.save(os.path.join(target_folder, file), slides.ImageFormat.JPEG)
-            return os.path.join(target_folder, file)
