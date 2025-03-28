@@ -3,7 +3,6 @@
 import os
 from io import BytesIO
 from pptx import Presentation
-from aspose import slides
 
 
 def read_presentation(file_path) -> Presentation:
@@ -18,5 +17,3 @@ def get_speaker_notes(presentation: Presentation, slide_index: int) -> str:
     slide = presentation.slides[slide_index]
     notes_slide = slide.notes_slide
     return notes_slide.notes_text_frame.text
-
-
