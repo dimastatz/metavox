@@ -26,5 +26,5 @@ def get_libreoffice_version() -> str:
         stdout=subprocess.PIPE,
         stderr=subprocess.PIPE,
         text=True,
-        check=True
+        check=True,
     )
