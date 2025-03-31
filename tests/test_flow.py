@@ -1,7 +1,6 @@
 """ test main flows of metavox"""
 
 import os
-import tempfile
 import metavox
 import metavox.presentation as pt
 
@@ -27,3 +26,9 @@ def test_read_presentation():
     assert presentation is not None
     assert len(presentation.slides) == 4
     assert slide_0_notes in pt.get_speaker_notes(presentation, 0)
+
+
+def test_libreoffice_version():
+    """test presentation load"""
+    version = pt.get_libreoffice_version()
+    assert version is not None

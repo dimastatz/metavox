@@ -1,6 +1,6 @@
 """Document class for handling the document file"""
 
-import os
+import subprocess
 from io import BytesIO
 from pptx import Presentation
 
@@ -17,3 +17,14 @@ def get_speaker_notes(presentation: Presentation, slide_index: int) -> str:
     slide = presentation.slides[slide_index]
     notes_slide = slide.notes_slide
     return notes_slide.notes_text_frame.text
+
+
+def get_libreoffice_version() -> str:
+    """Get the version of LibreOffice installed on the system"""
+    return subprocess.run(
+        ["libreoffice", "--version"],
+        stdout=subprocess.PIPE,
+        stderr=subprocess.PIPE,
+        text=True,
+        check=True
+    )
