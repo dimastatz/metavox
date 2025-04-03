@@ -12,8 +12,7 @@
 	// "forwardPorts": [],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "apt-get update && apt-get install -y --no-install-recommends libreoffice libfontconfig1 libfreetype6 libx11-6 libxrender1 libxrender1 libxrender1 libxext6 libxcb1 libxcb1 libuuid1 rm -rf /var/lib/apt/lists/*"
-	
+	"postCreateCommand": "../update_image.sh"
 	// Configure tool-specific properties.
 	// "customizations": {},
 
