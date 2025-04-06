@@ -32,3 +32,6 @@ def test_libreoffice_version():
     """test presentation load"""
     version = pt.get_libreoffice_version()
     assert version is not None
+    file_path = get_resource_path("dummy_presentation", "pptx")
+    output = pt.convert_pptx_to_pdf(file_path)
+    assert output is not None

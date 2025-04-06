@@ -1,5 +1,6 @@
 """Document class for handling the document file"""
 
+import os
 import subprocess
 from io import BytesIO
 from pptx import Presentation
@@ -28,3 +29,22 @@ def get_libreoffice_version() -> str:
         text=True,
         check=True,
     )
+
+
+def convert_pptx_to_pdf(input_path, output_dir=None) -> str:
+    """Convert a PPTX file to PDF using LibreOffice"""
+    if output_dir is None:
+        output_dir = os.path.dirname(input_path)
+
+    command = [
+        "libreoffice",
+        "--headless",
+        "--convert-to",
+        "pdf",
+        "--outdir",
+        output_dir,
+        input_path,
+    ]
+
+    subprocess.run(command, check=True)
+    return output_dir
