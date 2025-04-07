@@ -33,8 +33,9 @@ def get_libreoffice_version() -> str:
 
 def convert_pptx_to_pdf(input_path, output_dir) -> str:
     """Convert a PPTX file to PDF using LibreOffice"""
-    if output_dir is None:
-        output_dir = os.path.dirname(input_path)
+    _, file_name = os.path.split(input_path)
+    file_name = os.path.splitext(file_name)[0] + ".pdf"
+    output_path = os.path.join(output_dir, file_name)
 
     command = [
         "libreoffice",
@@ -47,4 +48,4 @@ def convert_pptx_to_pdf(input_path, output_dir) -> str:
     ]
 
     subprocess.run(command, check=True)
-    return output_dir
+    return output_path
