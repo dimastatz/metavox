@@ -31,7 +31,7 @@ def get_libreoffice_version() -> str:
     )
 
 
-def convert_pptx_to_pdf(input_path, output_dir=None) -> str:
+def convert_pptx_to_pdf(input_path, output_dir) -> str:
     """Convert a PPTX file to PDF using LibreOffice"""
     if output_dir is None:
         output_dir = os.path.dirname(input_path)
