@@ -48,3 +48,9 @@ def test_libreoffice_version():
         # Convert the PDF file to PNG
         images = pdf.convert_from_path(output, dpi=300)
         assert images is not None and len(images) == 4
+
+        folder_path = os.path.dirname(output)
+        assert os.path.exists(folder_path)
+        assert os.path.isdir(folder_path)
+        for i, image in enumerate(images):
+            image.save(f"{temp_dir}/page_{i + 1}.jpg", "JPEG")
