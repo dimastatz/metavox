@@ -53,4 +53,6 @@ def test_libreoffice_version():
         assert os.path.exists(folder_path)
         assert os.path.isdir(folder_path)
         for i, image in enumerate(images):
-            image.save(f"{temp_dir}/page_{i + 1}.jpg", "JPEG")
+            file_name = f"{temp_dir}/page_{i + 1}.jpg"
+            image.save(file_name, "JPEG")
+            assert os.path.exists(file_name)
