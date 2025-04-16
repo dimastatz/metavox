@@ -2,6 +2,8 @@
 
 import os
 import tempfile
+import pdf2image as pdf
+
 import metavox
 import metavox.presentation as pt
 
@@ -35,10 +37,14 @@ def test_libreoffice_version():
     assert version is not None
     file_path = get_resource_path("dummy_presentation", "pptx")
     _, file_name = os.path.split(file_path)
-    
+
     with tempfile.TemporaryDirectory() as temp_dir:
         # Convert the PPTX file to PDF
         output = pt.convert_pptx_to_pdf(file_path, temp_dir)
         assert output is not None
         assert os.path.exists(output)
         assert os.path.splitext(file_name)[0] + ".pdf" in os.listdir(temp_dir)
+
+        # Convert the PDF file to PNG
+        images = pdf.convert_from_path(output, dpi=300)
+        assert images is not None and len(images) == 4
