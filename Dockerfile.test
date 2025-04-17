@@ -20,9 +20,11 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 WORKDIR /app
 
 # Copy requirements file
+COPY update_image.sh .
 COPY requirements.txt .
 
 # Install dependencies
+RUN chmod +x update_image.sh && ./update_image.sh
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy the rest of the application
