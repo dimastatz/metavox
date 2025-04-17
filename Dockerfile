@@ -14,6 +14,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     libxext6 \
     libxcb1 \
     libuuid1 \
+    default-jdk \
     poppler-utils \
     && rm -rf /var/lib/apt/lists/*
 
