@@ -1,7 +1,7 @@
 <div align="center">
 <h1 align="center"> MetaVox </h1> 
 <h3>AI Dubbing Python Library for Multi-Language Support</br></h3>
-<img src="https://img.shields.io/badge/Progress-0%25-red"> <img src="https://img.shields.io/badge/Feedback-Welcome-green">
+<img src="https://img.shields.io/badge/Progress-10%25-red"> <img src="https://img.shields.io/badge/Feedback-Welcome-green">
 </br>
 </br>
 <kbd>
