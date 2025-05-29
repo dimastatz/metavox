@@ -17,7 +17,7 @@ def get_resource_path(name: str, extension: str) -> str:
 
 def test_version():
     """test version"""
-    assert metavox.__version__ == "0.2.0"
+    assert metavox.__version__ == "0.3.0"
 
 
 def test_read_presentation():
