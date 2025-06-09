@@ -1,8 +1,12 @@
 """ test main flows of metavox"""
 
 import os
+import torch
 import tempfile
 import pdf2image as pdf
+
+import torchaudio as ta
+from chatterbox.tts import ChatterboxTTS
 
 import metavox
 import metavox.presentation as pt
@@ -56,3 +60,17 @@ def test_libreoffice_version():
             file_name = f"{temp_dir}/page_{i + 1}.jpg"
             image.save(file_name, "JPEG")
             assert os.path.exists(file_name)
+
+
+def test_chatterbox():
+    """test chatterbox"""
+    device = "cuda" if torch.cuda.is_available() else "cpu"
+    model = ChatterboxTTS.from_pretrained(device=device)
+
+    text = "Text is nice, but audio is better."
+    wav = model.generate(text)
+    ta.save("test-1.wav", wav, model.sr)
+
+    # If you want to synthesize with a different voice, specify the audio prompt
+    wav = model.generate(text, audio_prompt_path="tmp_file.wav")
+    ta.save("test-2.wav", wav, model.sr)
