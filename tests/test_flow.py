@@ -1,8 +1,9 @@
 """ test main flows of metavox"""
 
 import os
-import torch
 import tempfile
+
+import torch
 import pdf2image as pdf
 
 import torchaudio as ta
