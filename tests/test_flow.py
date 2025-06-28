@@ -79,5 +79,5 @@ def test_chatterbox():
     ta.save("test-1.wav", wav, model.sr)
 
     # If you want to synthesize with a different voice, specify the audio prompt
-    wav = model.generate(text, audio_prompt_path="tmp_file.wav")
-    ta.save("test-2.wav", wav, model.sr)
+    # wav = model.generate(text, audio_prompt_path="tmp_file.wav")
+    # ta.save("test-2.wav", wav, model.sr)
