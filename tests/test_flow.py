@@ -3,11 +3,7 @@
 import os
 import tempfile
 
-import torch
 import pdf2image as pdf
-
-import torchaudio as ta
-from chatterbox.tts import ChatterboxTTS
 
 import metavox
 import metavox.presentation as pt
@@ -65,19 +61,6 @@ def test_libreoffice_version():
 
 def test_chatterbox():
     """test chatterbox"""
-    if torch.cuda.is_available():
-        device = "cuda"
-    elif torch.backends.mps.is_available():
-        device = "mps"
-    else:
-        device = "cpu"
-
-    model = ChatterboxTTS.from_pretrained(device=device)
-
     text = "Text is nice, but audio is better."
-    wav = model.generate(text)
-    ta.save("test-1.wav", wav, model.sr)
-
-    # If you want to synthesize with a different voice, specify the audio prompt
-    # wav = model.generate(text, audio_prompt_path="tmp_file.wav")
-    # ta.save("test-2.wav", wav, model.sr)
+    wav = pt.speaker_notes_to_audio(text)
+    assert wav is not None
