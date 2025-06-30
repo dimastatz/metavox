@@ -3,6 +3,9 @@
 import os
 import tempfile
 
+from unittest import mock
+
+import pytest
 import pdf2image as pdf
 
 import metavox
@@ -57,6 +60,15 @@ def test_libreoffice_version():
             file_name = f"{temp_dir}/page_{i + 1}.jpg"
             image.save(file_name, "JPEG")
             assert os.path.exists(file_name)
+
+
+@pytest.fixture
+def mock_tts():
+    """mock chatterbox"""
+    with mock.patch("metavox.presentation.ChatterboxTTS") as tts:
+        instance = tts.from_pretrained.return_value
+        instance.generate.return_value = "fake_wav"
+        yield tts
 
 
 def test_chatterbox():
