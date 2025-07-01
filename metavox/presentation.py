@@ -5,6 +5,7 @@ import subprocess
 from io import BytesIO
 
 import torch
+import torchaudio as ta
 
 from pptx import Presentation
 from chatterbox.tts import ChatterboxTTS
@@ -66,4 +67,7 @@ def speaker_notes_to_audio(notes: str) -> str:
 
     model = ChatterboxTTS.from_pretrained(device=device)
     wav = model.generate(notes)
-    return wav
+
+    buffer = BytesIO()
+    ta.save(buffer, wav, model.sr)
+    return buffer

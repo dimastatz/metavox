@@ -77,27 +77,29 @@ def test_speaker_notes_to_audio_devices(mock_tts):
     text = "CPU test"
     wav = pt.speaker_notes_to_audio(text)
     assert not wav is None
-        
+
     # cuda mock
-    with mock.patch("torch.cuda.is_available", return_value=True), \
-         mock.patch("torch.backends.mps.is_available", return_value=False):
+    with mock.patch("torch.cuda.is_available", return_value=True), mock.patch(
+        "torch.backends.mps.is_available", return_value=False
+    ):
         text = "CUDA test"
         try:
             wav = pt.speaker_notes_to_audio(text)
             assert wav == "fake_wav"
             mock_tts.from_pretrained.assert_called_with(device="cuda")
-        except Exception as e:
+        except Exception as error:
             # In test env, CUDA may not be supported
-            assert "cuda" in str(e).lower() or isinstance(e, RuntimeError)
+            assert "cuda" in str(error).lower() or isinstance(error, RuntimeError)
 
     # mps mock
-    with mock.patch("torch.cuda.is_available", return_value=False), \
-         mock.patch("torch.backends.mps.is_available", return_value=True):
+    with mock.patch("torch.cuda.is_available", return_value=False), mock.patch(
+        "torch.backends.mps.is_available", return_value=True
+    ):
         text = "MPS test"
         try:
             wav = pt.speaker_notes_to_audio(text)
             assert wav == "fake_wav"
             mock_tts.from_pretrained.assert_called_with(device="mps")
-        except Exception as e:
+        except Exception as error:
             # In test env, MPS may not be supported
-            assert "mps" in str(e).lower() or isinstance(e, RuntimeError)
+            assert "mps" in str(error).lower() or isinstance(error, RuntimeError)
