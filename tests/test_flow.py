@@ -62,7 +62,7 @@ def test_libreoffice_version():
             assert os.path.exists(file_name)
 
 
-@pytest.fixture
+@pytest.fixture(name="tts")
 def mock_tts():
     """mock chatterbox"""
     with mock.patch("metavox.presentation.ChatterboxTTS") as tts:
@@ -71,7 +71,7 @@ def mock_tts():
         yield tts
 
 
-def test_speaker_notes_to_audio_devices(mock_tts):
+def test_speaker_notes_to_audio_devices(tts):
     """test speaker_notes_to_audio"""
 
     text = "CPU test"
@@ -86,8 +86,8 @@ def test_speaker_notes_to_audio_devices(mock_tts):
         try:
             wav = pt.speaker_notes_to_audio(text)
             assert wav == "fake_wav"
-            mock_tts.from_pretrained.assert_called_with(device="cuda")
-        except Exception as error:
+            tts.from_pretrained.assert_called_with(device="cuda")
+        except Exception as error:  # pylint: disable=broad-except
             # In test env, CUDA may not be supported
             assert "cuda" in str(error).lower() or isinstance(error, RuntimeError)
 
@@ -99,7 +99,7 @@ def test_speaker_notes_to_audio_devices(mock_tts):
         try:
             wav = pt.speaker_notes_to_audio(text)
             assert wav == "fake_wav"
-            mock_tts.from_pretrained.assert_called_with(device="mps")
-        except Exception as error:
+            tts.from_pretrained.assert_called_with(device="mps")
+        except Exception as error:  # pylint: disable=broad-except
             # In test env, MPS may not be supported
             assert "mps" in str(error).lower() or isinstance(error, RuntimeError)
