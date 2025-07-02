@@ -71,7 +71,7 @@ def speaker_notes_to_audio(notes: str) -> str:
 
     with tempfile.NamedTemporaryFile(delete=False) as tmp_file:
         ta.save(tmp_file.name, wav, model.sr)
-    
-    with open(tmp_file.name, 'r') as file:
+
+    with open(tmp_file.name, "rb") as file:
         file_content = file.read()
         return file_content
