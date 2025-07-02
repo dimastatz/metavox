@@ -1,6 +1,7 @@
 """Document class for handling the document file"""
 
 import os
+import tempfile
 import subprocess
 from io import BytesIO
 
@@ -68,6 +69,9 @@ def speaker_notes_to_audio(notes: str) -> str:
     model = ChatterboxTTS.from_pretrained(device=device)
     wav = model.generate(notes)
 
-    buffer = BytesIO()
-    ta.save(buffer, wav, model.sr)
-    return buffer
+    with tempfile.NamedTemporaryFile(delete=False) as tmp_file:
+        ta.save(tmp_file.name, wav, model.sr)
+    
+    with open(tmp_file.name, 'r') as file:
+        file_content = file.read()
+        return file_content
