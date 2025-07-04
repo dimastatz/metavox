@@ -74,7 +74,7 @@ def mock_tts():
 def test_speaker_notes_to_audio_devices(tts):
     """test speaker_notes_to_audio"""
 
-    text = "CPU test"
+    text = "Hello, this is a test of speaker notes to audio conversion."
     wav = pt.speaker_notes_to_audio(text)
     assert not wav is None
 
