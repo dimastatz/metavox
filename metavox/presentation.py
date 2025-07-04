@@ -1,7 +1,7 @@
 """Document class for handling the document file"""
 
 import os
-import tempfile
+
 import subprocess
 from io import BytesIO
 
