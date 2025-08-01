@@ -9,7 +9,6 @@ import torch
 import torchaudio as ta
 
 from pptx import Presentation
-from chatterbox.tts import ChatterboxTTS
 
 
 def read_presentation(file_path) -> Presentation:
