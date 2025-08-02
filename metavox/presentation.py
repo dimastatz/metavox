@@ -1,13 +1,14 @@
 """Document class for handling the document file"""
 
 import os
+import tempfile
 
 import subprocess
 from io import BytesIO
 
-import torch
-import torchaudio as ta
+import soundfile as sf
 
+from kokoro import KPipeline
 from pptx import Presentation
 
 
@@ -56,16 +57,25 @@ def convert_pptx_to_pdf(input_path, output_dir) -> str:
     return output_path
 
 
-def speaker_notes_to_audio(notes: str) -> str:
+def speaker_notes_to_audio(notes: str, lang_code='a') -> str:
     """Convert speaker notes to audio using TTS"""
-    if torch.cuda.is_available():
-        device = "cuda"
-    elif torch.backends.mps.is_available():
-        device = "mps"
-    else:
-        device = "cpu"
-
-    model = ChatterboxTTS.from_pretrained(device=device)
-    wav = model.generate(notes)
-    ta.save("test-1.wav", wav, model.sr)
-    return "test-1.wav"
+    # Initialize kokoro pipelinepipeline = KPipeline(lang_code=lang_code)
+    generator = pipeline(notes, voice='af_heart')
+    
+    # Generate audio (take first result)
+    for i, (gs, ps, audio) in enumerate(generator):
+        print(f"Generated audio chunk {i}: gs={gs}, ps={ps}")
+        
+        # Create temporary file
+        with tempfile.NamedTemporaryFile(delete=False, suffix='.wav') as tmp_file:
+            sf.write(tmp_file.name, audio, 24000)
+            
+            # Return the audio file
+            return FileResponse(
+                path=tmp_file.name,
+                media_type='audio/wav',
+                filename='speech.wav',
+                headers={
+                    "Content-Disposition": "attachment; filename=speech.wav"
+                }
+            )
