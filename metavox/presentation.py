@@ -1,7 +1,6 @@
 """Document class for handling the document file"""
 
 import os
-import tempfile
 
 import subprocess
 from io import BytesIO
@@ -57,24 +56,13 @@ def convert_pptx_to_pdf(input_path, output_dir) -> str:
     return output_path
 
 
-def speaker_notes_to_audio(notes: str, lang_code="a") -> str:
-    """Convert speaker notes to audio using TTS"""
-    # Initialize kokoro pipeline
+def speaker_notes_to_audio(notes: str, lang_code="a") -> BytesIO:
+    """Convert speaker notes to audio using TTS and return as memory stream"""
     pipeline = KPipeline(lang_code=lang_code)
     generator = pipeline(notes, voice="af_heart")
 
-    # Generate audio (take first result)
-    for i, (gs, ps, audio) in enumerate(generator):
-        print(f"Generated audio chunk {i}: gs={gs}, ps={ps}")
-
-        # Create temporary file
-        with tempfile.NamedTemporaryFile(delete=False, suffix=".wav") as tmp_file:
-            sf.write(tmp_file.name, audio, 24000)
-
-            # Return the audio file
-            return FileResponse(
-                path=tmp_file.name,
-                media_type="audio/wav",
-                filename="speech.wav",
-                headers={"Content-Disposition": "attachment; filename=speech.wav"},
-            )
+    for _, _, audio in generator:
+        audio_stream = BytesIO()
+        sf.write(audio_stream, audio, 24000, format="WAV")
+        audio_stream.seek(0)
+        return audio_stream
