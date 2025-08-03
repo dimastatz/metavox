@@ -20,7 +20,7 @@ def main():
     presentation = pt.read_presentation(sys.argv[1])
     for i, _ in enumerate(presentation.slides):
         notes = pt.get_speaker_notes(presentation, i)
-        log.info(f"Speaker Notes: {i} {notes}")
+        log.info("Speaker Notes: %d %s", i, notes)
 
 
 if __name__ == "__main__":
